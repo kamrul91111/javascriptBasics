@@ -9,13 +9,43 @@
 //const means constant, as in it will remain the same instead of declaring it as let
 // const interestRate = 0.3;
 // console.log(interestRate);
-
+////////////////primitive data///////////////////////
 //they are all variables, hence declared with let instead of const
-let name = 'Kamrul'; //String Literal
-let age = 23; // Number Literal
-let isApproved = true; // boolean Literal
-let firstName = undefined; // undefined
-let selectedColor = null; //null
+// let name = 'Kamrul'; //String Literal
+// // //in js there no int, float and double. They are all type number
+// let age = 23; // Number Literal
+// let isApproved = true; // boolean Literal
+// let firstName = undefined; // undefined
+// let selectedColor = null; //null
 
-console.log(name);
+//////////Object data//////////////////
+//declare person Object
+//let == reusable
+//const == not reusable
+//{} == object Literal
+let person = {
+    name : 'Wazeen',
+    age : 23
+};
 
+///////////////for changing object data/////////////
+
+
+//Method 1 : Dot notation
+person.name = 'Torfa';
+
+//Method 2 : Bracket Notation
+//person['name'] = 'Mary'
+
+console.log(person.name);
+
+//////////////////////////////////////////////
+
+
+////////////////Array Literlas//////////////////////////
+
+let selectedColors = ['red', 'blue'];
+//assigning the third element
+//in js, you can store different data types in the same array
+selectedColors[2] = 'pink';
+console.log(selectedColors);
