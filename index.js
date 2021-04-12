@@ -11,12 +11,12 @@
 // console.log(interestRate);
 ////////////////primitive data///////////////////////
 //they are all variables, hence declared with let instead of const
-// let name = 'Kamrul'; //String Literal
-// // //in js there no int, float and double. They are all type number
-// let age = 23; // Number Literal
-// let isApproved = true; // boolean Literal
-// let firstName = undefined; // undefined
-// let selectedColor = null; //null
+let name = 'Kamrul'; //String Literal
+// //in js there no int, float and double. They are all type number
+let age = 23; // Number Literal
+let isApproved = true; // boolean Literal
+let firstName = undefined; // undefined
+let selectedColor = null; //null
 
 //////////Object data//////////////////
 //declare person Object
@@ -37,15 +37,36 @@ person.name = 'Torfa';
 //Method 2 : Bracket Notation
 //person['name'] = 'Mary'
 
-console.log(person.name);
+//console.log(person.name);
 
 //////////////////////////////////////////////
 
 
 ////////////////Array Literlas//////////////////////////
 
-let selectedColors = ['red', 'blue'];
-//assigning the third element
-//in js, you can store different data types in the same array
-selectedColors[2] = 'pink';
-console.log(selectedColors);
+// let selectedColors = ['red', 'blue'];
+// //assigning the third element
+// //in js, you can store different data types in the same array
+// selectedColors[2] = 'pink';
+// console.log(selectedColors);
+
+///////////Functions////////////////////////
+//parameter is what you have at the time of declaration
+//name is only a parameter of this function which cannot be used elsewhere
+//This function is simply performing a task
+function greet (firstName, lastName) {
+    console.log(' Hello ' + firstName + '' + lastName);
+}
+
+
+//to indicate a statement
+//argument is the actual value that is supplied
+//greet('Kamrul ', 'Islam');
+
+//Function to calculate a value
+function square(number) {
+    return number * number;
+}
+
+let number = square(2);
+console.log(number);
